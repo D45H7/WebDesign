@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D45H7 || PreLoader2</title>
+<style type="text/css">
+body {
+  margin:0;
+  padding:0;
+}
+
+.preload {
+  position:fixed;
+  background:#202c20;
+  width:100%;
+  height:100%;
+  opacity:0;
+  animation:pre 15s;
+}
+
+@keyframes pre {
+  0%,90%{opacity:1;}
+  100%{opacity:0;}
+}
+
+.text-load {
+  position:fixed;
+  top:40%;
+  color:white;
+  text-align:center;
+  line-break:line-break;
+}
+
+.txt1, .txt2, .txt3, .txt4 {
+  position:fixed;
+  font-size:50px;
+  opacity:0;
+}
+
+.txt1 {
+  right:30%;
+  animation:atxt1 3s;
+}
+
+.txt2 {
+  top:38%;
+  animation:atxt2 4s;
+  animation-delay:3s;
+}
+
+.txt3 {
+  top:37%;
+  animation:atxt3 3s;
+  animation-delay:7s;
+}
+
+.txt4 {
+  top:37%;
+  right:10%;
+  animation:atxt4 4s;
+  animation-delay:10s;
+}
+
+@keyframes atxt1 {
+  0%,100%{opacity:0;}
+  10%,90%{opacity:1;}
+}
+
+@keyframes atxt2 {
+  0%,100%{opacity:0;}
+  10%,90%{opacity:1;}
+}
+
+@keyframes atxt3 {
+  0%,100%{opacity:0;}
+  10%,90%{opacity:1;}
+}
+
+@keyframes atxt4 {
+  0%,100%{opacity:0;}
+  10%,90%{opacity:1;}
+}
+
+.pr-bar {
+  position:absolute;
+  top:50%;
+  padding:10px 5px;
+  right:15%;
+  width:70%;
+  height:40px;
+  align-content:center;
+  background:red;
+  overflow:hidden;
+}
+
+.progress-col {
+  background:#505050;
+  height:100%;
+  width:100%;
+}
+
+.progress {
+  background:purple;
+  height:100%;
+  width:100%;
+  animation:prog 12s;
+}
+
+@keyframes prog {
+  0%,10%{width:5%}
+  20%{width:20%}
+  40%{width:40%}
+  60%{width:60%}
+  80%{width:70%}
+  95%{width:90%}
+  100%{width:100%;}
+}
+
+.pr-bar, .progress, .progress-col {
+  border-radius:50px;
+}
+
+/** --- Responsive Style --- **/
+@media (max-height:768px) {
+  .txt1, .txt2, .txt3, .txt4 {
+  font-size:20px;
+  }
+  .pr-bar, .progress, .progress-col {
+    border-radius:20px;
+  }
+  .pr-bar {
+    padding:5px 2px;
+    right:20%;
+    width:60%;
+    height:20px;
+  }
+}
+@media (max-height:450px) {
+  
+}
+</style>
+</head>
+<body>
+  <div class="preload">
+    <div class="text-load">
+      <p class="txt1">Selamat datang..</p>
+      <p class="txt2">Tools yg kami berikan tidak sepenuhnya buatan kami</p>
+      <p class="txt3">Silahkan menggunakan dan menikmati 😊</p>
+      <p class="txt4">Jangan lupa #share ya kawan.. 😘</p>
+    </div>
+    <div class="pr-bar">
+      <div class="progress-col">
+        <div class="progress"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
