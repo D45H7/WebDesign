@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cinematic Preloader</title>
+<style type="text/css">
+body {
+  margin:0;
+  padding:0;
+}
+
+.preload {
+  position:fixed;
+  background:blue;
+  border-radius:0 40px 40px 0;
+  opacity:0;
+  height:100%;
+  animation:loads 10s;
+}
+
+@keyframes loads {
+  0%{width:0;opacity:0;}
+  20%{opacity:.7;}
+  50%{opacity:1;}
+  90%{width:80%;opacity:1;}
+  100%{width:120%;opacity:1;}
+}
+
+.content {
+  position:absolute;
+  top:30%;
+  width:70%;
+  left:40px;
+  line-break:line-break;
+}
+
+.content h1 {
+  font-size:100px;
+  color:#c0c0c0;
+  animation:drop 7s;
+  animation-delay:3s;
+  opacity:0;
+}
+
+@keyframes drop {
+  0%{opacity:0;}
+  50%,100%{opacity:1;}
+}
+
+.content p {
+  color:#3f3d3c;
+  position:fixed;
+  font-size:50px;
+  width:70%;
+  top:150%;
+  line-break:line-break;
+  animation:blop 5s;
+  animation-delay:5s;
+}
+
+@keyframes blop {
+  0%{top:120%}
+  90%{top:50%}
+  100%{top:55%}
+}
+</style>
+</head>
+<body>
+  <div class="preload">
+    <div class="content">
+      <h1>Welcome</h1>
+      <p>Selamat datang di website kami. Terimakasih telah mengunjungi.</p>
+    </div>
+  </div>
+</body>
+</html>
