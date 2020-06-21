@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animation rolling RODA</title>
+<style type="text/css">
+body {
+  margin:0;
+  padding:0;
+}
+
+.preload {
+  position:fixed;
+  background:#3d3d3d;
+  width:100%;
+  height:100%;
+  opacity:0;
+  animation:load 10s;
+}
+
+.text-content {
+  position:absolute;
+  top:30%;
+  right:125px;
+  text-align:center;
+  color:yellow;
+}
+
+.text-content h1 {
+  font-size:50px;
+  opacity:0;
+  animation:bling2 2s infinite;
+}
+
+.text-content p {
+  font-size:20px;
+  opacity:0;
+}
+
+.t1 {
+  animation:text1 4s;
+  animation-delay:1s;
+}
+
+.t2 {
+  animation:text2 5s;
+  animation-delay:5s;
+}
+
+.lobang {
+  position:fixed;
+  top:50%;
+  width:100%;
+  height:240px;
+  border:5px solid red;
+  border-left:0;
+}
+
+.roda {
+  position:absolute;
+  width:200px;
+  height:200px;
+  border:20px double black;
+  border-radius:200px;
+  overflow:hidden;
+  animation:scroll 10s;
+}
+
+.pelk {
+  width:200px;
+  height:200px;
+  background:yellow;
+  clip-path: polygon(51% 0, 3% 96%, 100% 35%, 0 36%, 95% 98%);
+}
+
+/** Animation all here **/
+@keyframes load {
+  0%,95%{opacity:1;}
+  100%{opacity:0;}
+}
+
+@keyframes scroll {
+  from{left:-50px;transform:rotate(-1800deg);}
+  to{left:100%;}
+}
+
+@keyframes text1 {
+  0%,10%{right:-100px;opacity:1;}
+  80%,100%{right:50%}
+}
+
+@keyframes text2 {
+  0%,20%{right:-100px;opacity:1;}
+  80%,100%{right:50%}
+}
+
+@keyframes bling2 {
+  from{opacity:0;}
+  to{opacity:1}
+}
+</style>
+</head>
+<body>
+  <div class="preload">
+    <div class="text-content">
+      <h1>WELCOME TO MY WEBSITE</h1>
+      <p class="t1">Anything not impossible</p>
+      <p class="t2">Preparing before doing</p>
+    </div>
+    <div class="lobang">
+      <div class="roda">
+        <div class="pelk"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
