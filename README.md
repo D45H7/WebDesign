@@ -1,4 +1,4 @@
-<img src="https://l.top4top.io/s_16358zscw0.png" width="50%">
+<img src="https://l.top4top.io/s_16358zscw0.png" width="500px" align="center">
 
 # webDesign
 
