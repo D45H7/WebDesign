@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Login Animasi Keren</title>
+<style type="text/css">
+body {
+  margin:0;
+  padding:0;
+  background:#00003f;
+}
+
+.login-box {
+  position:absolute;
+  width:700px;
+  height:500px;
+  background:#2f2f4d;
+  border:5px solid lime;
+  text-align:center;
+  top:30%;
+  margin:0 13%;
+  border-radius:20px;
+}
+
+.login-box input {
+  position:relative;
+  display:flex;
+  background:transparent;
+  width:400px;
+  height:100px;
+  margin:50px 150px;
+  border-radius:50%;
+  font-size:30px;
+  text-align:center;
+  border:5px solid lime;
+  transition:1s;
+  color:#555;
+}
+
+.login-box button {
+  width:100px;
+  height:50px;
+  background:#3c3c3e;
+  color:#ffffff;
+  border-radius:20px;
+}
+
+.login-box input:focus {
+  width:500px;
+  border-radius:50px;
+}
+</style>
+</head>
+<body>
+  <div class="login-box">
+    <form>
+      <input type="user" placeholder="Username" required>
+      <input type="pass" placeholder="password" required>
+      <button type="submit" required>Login</button>
+    </form>
+  </div>
+</body>
+</html>
